@@ -1,10 +1,11 @@
 :root {
-  --accent-color: #ff0070;
-  --title-card-color: #000024;
-  --text-card-color: #f1b2ce;
-  --circle-shadow-color: #ff007080;
-  --text-hover-color: #ff007040;
-  --header-background-images: url("../images/cover-image-dark.png");
-  --font-card-color: #000028;
-  --header-font-color: #db00ff;
+	--accent-color: #ff0070;
+	--title-card-color: #000024;
+	--text-card-color: #f1b2ce;
+	--circle-shadow-color: #ff007080;
+	--text-hover-color: #ff007040;
+	--header-background-images: url('../images/cover-image-dark.png');
+	--font-card-color: #000028;
+	--header-font-color: #db00ff;
 }
+

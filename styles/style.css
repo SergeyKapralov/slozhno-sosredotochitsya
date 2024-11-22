@@ -8,6 +8,7 @@
   font-family: "IBM Plex Mono", sans-serif;
   font-size: 18px;
   line-height: 130%;
+  background-attachment: fixed;
 }
 
 .header__theme-menu-button {
@@ -36,10 +37,11 @@
 
 .header {
   display: grid;
+  block-size: 100vh;
   position: relative;
   grid-template-columns: 1fr;
-  grid-template-rows: 51vw max(30vw, 195px) min(48vw, 292px);
-  gap: 50px;
+  grid-template-rows: 29vh 29vh 44vh;
+  gap: 48px;
   padding-inline-end: 2.5vw;
   padding-inline-start: 10px;
   background-size: cover;
@@ -198,7 +200,9 @@
 
 @media (width >= 588px) {
   .header {
+    grid-template-rows: 1fr 1fr 1fr;
     padding-inline-start: 0px;
+    gap: 60px;
   }
 
   .header__icon {
@@ -212,20 +216,22 @@
     padding-inline-start: 20px;
   }
 
-  .header__title {
-    padding-block-start: 24px;
-  }
-
   .header__text {
     inline-size: 364px;
   }
 
   .header__theme-menu {
-    align-self: end;
-    block-size: 200px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    block-size: 110px;
     padding-block-end: 0;
   }
 
+  .header__title {
+    align-self: center;
+    padding-block-start: 0;
+  }
   .header__title-theme::before {
     top: 20px;
     right: 20px;
@@ -233,6 +239,7 @@
 
   .header__title-theme::after {
     left: 20px;
+    bottom: 15px;
   }
 
   .focus-card {
@@ -242,15 +249,12 @@
   }
 
   .focus-card_inline {
-    gap: 22px;
+    gap: 20px;
+    grid-template-columns: 1fr;
   }
 
   .focus-card_first {
-    padding-block-start: 9vw;
-  }
-
-  .focus-card_inline {
-    grid-template-columns: 1fr;
+    padding-block-start: 8vw;
   }
 
   .focus-card__title_inline {
@@ -304,20 +308,21 @@
     grid-template-rows: 3fr 5fr 3fr;
     padding-inline-end: 20px;
     padding-block-end: 0px;
-    gap: 15px;
+    gap: 9px;
   }
 
   .header__theme-menu {
     align-self: flex-start;
-    padding-block-start: 18px;
-    padding-inline-start: 25px;
+    justify-self: center;
+    padding-block-start: 19px;
+    inline-size: 250px;
   }
 
   .header__theme-menu-list {
     flex-direction: row;
     justify-self: center;
     padding-block-start: 0;
-    block-size: 300px;
+    gap: 10px;
   }
 
   .header__title {
@@ -341,7 +346,7 @@
   }
 
   .focus-card_first {
-    padding-block-start: 6.3vw;
+    padding-block-start: 6vw;
   }
 
   .focus-card_inline {
