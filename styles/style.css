@@ -23,6 +23,7 @@
   background-color: transparent;
   border: none;
   line-height: 1;
+  color: var(--accent-color);
 }
 
 .header__theme-menu-button:focus {
@@ -100,6 +101,7 @@
 .title-decor {
   background-color: var(--accent-color);
   color: var(--font-card-color);
+  font-size: 18px;
 }
 
 .title-theme {
@@ -146,10 +148,6 @@
   align-items: center;
   justify-content: center;
   gap: 49px;
-}
-
-.title-decor {
-  font-size: 18px;
 }
 
 .title-decor_transform {
@@ -405,10 +403,6 @@
 }
 
 .page.theme_dark .header__theme-menu-button {
-  color: var(--accent-color);
-}
-
-.header__theme-menu-button {
   color: var(--accent-color);
 }
 
