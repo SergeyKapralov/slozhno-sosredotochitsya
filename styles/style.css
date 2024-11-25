@@ -351,7 +351,7 @@
   }
 
   .title-theme {
-    font-size: clamp(9rem, 9.15rem + 1vw, 10rem);
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .header__text {

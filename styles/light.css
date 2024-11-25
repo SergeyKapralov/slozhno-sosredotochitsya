@@ -10,8 +10,6 @@
   --header-background-images: url("../images/cover-image-light.png");
   --header-font-color: #ffc2e6;
   --text-hover-color: #32312d40;
-  color: var(--font-card-color);
-  background-color: var(--title-card-color);
   --text-card-color: #353430;
 }
 
@@ -35,6 +33,10 @@
   display: none;
 }
 
+.page.theme_light .title-decor {
+  color: var(--text-card-color);
+}
+
 .page.theme_light .title-theme::before {
   border-color: var(--text-card-color);
 }
@@ -51,8 +53,6 @@
     --text-card-color: #353430;
     --header-font-color: #ffc2e6;
     --text-hover-color: #32312d40;
-    color: var(--font-card-color);
-    background-color: var(--title-card-color);
   }
 
   .page .focus-card__title {
@@ -77,6 +77,10 @@
 
   .page.theme_auto .header__icon {
     display: none;
+  }
+
+  .page.theme_auto .title-decor {
+    color: var(--text-card-color);
   }
 
   .page.theme_auto .title-theme::before {
