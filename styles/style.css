@@ -8,6 +8,7 @@
   font-family: "IBM Plex Mono", sans-serif;
   font-size: 18px;
   line-height: 130%;
+  background-position: center;
   background-attachment: fixed;
   color: var(--text-card-color);
   background-color: var(--title-card-color);
@@ -42,6 +43,7 @@
   display: grid;
   block-size: 100vh;
   position: relative;
+  min-block-size: 668px;
   grid-template-columns: 1fr;
   gap: 18px;
   padding-inline-end: 2.5vw;
@@ -136,9 +138,9 @@
 
 .header__text {
   justify-self: end;
+  align-self: flex-start;
   box-sizing: border-box;
   inline-size: 355px;
-  block-size: 117px;
   font-weight: bold;
 }
 
@@ -349,12 +351,11 @@
   }
 
   .title-theme {
-    font-size: 157px;
+    font-size: clamp(9rem, 9.15rem + 1vw, 10rem);
   }
 
   .header__text {
     inline-size: 491px;
-    block-size: 71px;
   }
 
   .focus-card {
@@ -395,90 +396,5 @@
   .header__icon::after {
     top: 6px;
     left: 44px;
-  }
-}
-
-.page.theme_dark .focus-card__title {
-  color: var(--accent-color);
-}
-
-.page.theme_dark .header__theme-menu-button {
-  color: var(--accent-color);
-}
-
-.page.theme_dark .header__theme-menu-button_type_dark {
-  border: 1px solid var(--accent-color);
-}
-
-.page.theme_light .focus-card__title {
-  color: var(--text-card-color);
-}
-
-.page.theme_light .header__theme-menu-button {
-  color: var(--text-card-color);
-}
-
-.page.theme_light .header__theme-menu-button_type_light {
-  border: 1px solid var(--text-card-color);
-}
-
-.page.theme_light .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--text-card-color);
-}
-
-.page.theme_light .header__icon {
-  display: none;
-}
-
-.page.theme_light .title-theme::before {
-  border-color: var(--text-card-color);
-}
-
-.page.theme_light .title-theme::after {
-  border-color: var(--text-card-color);
-}
-
-@media (prefers-color-scheme: light) {
-  .page {
-    --accent-color: #ff8dcb;
-    --title-card-color: #fff1f7;
-    --header-background-images: url("../images/cover-image-light.png");
-    --text-card-color: #353430;
-    --header-font-color: #ffc2e6;
-    --text-hover-color: #32312d40;
-    color: var(--font-card-color);
-    background-color: var(--title-card-color);
-  }
-
-  .page .focus-card__title {
-    color: var(--text-card-color);
-  }
-
-  .page .header__theme-menu-button {
-    color: var(--text-card-color);
-  }
-
-  .page.theme_light .header__theme-menu-button_type_light {
-    border: 1px solid var(--text-card-color);
-  }
-
-  .page.theme_auto .header__theme-menu-button_type_auto {
-    border: 1px solid var(--text-card-color);
-  }
-
-  .page.theme_auto .header__theme-menu-button:focus-visible {
-    border-bottom: 1px solid var(--text-card-color);
-  }
-
-  .page.theme_auto .header__icon {
-    display: none;
-  }
-
-  .page.theme_auto .title-theme::before {
-    border-color: var(--text-card-color);
-  }
-
-  .page.theme_auto .title-theme::after {
-    border-color: var(--text-card-color);
   }
 }

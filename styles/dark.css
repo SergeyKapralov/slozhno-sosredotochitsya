@@ -16,3 +16,15 @@
   color: var(--text-card-color);
   background-color: var(--title-card-color);
 }
+
+.page.theme_dark .focus-card__title {
+  color: var(--accent-color);
+}
+
+.page.theme_dark .header__theme-menu-button {
+  color: var(--accent-color);
+}
+
+.page.theme_dark .header__theme-menu-button_type_dark {
+  border: 1px solid var(--accent-color);
+}
