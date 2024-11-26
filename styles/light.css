@@ -1,93 +1,23 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_light {
   --accent-color: #ff8dcb;
-  --title-card-color: #fff1f7;
-  --header-background-images: url("../images/cover-image-light.png");
-  --header-font-color: #ffc2e6;
-  --text-hover-color: #32312d40;
+  --background-color: #fff1f7;
+  --title-card-color: #353430;
   --text-card-color: #353430;
-}
-
-.page.theme_light .focus-card__title {
-  color: var(--text-card-color);
-}
-
-.page.theme_light .header__theme-menu-button {
-  color: var(--text-card-color);
-}
-
-.page.theme_light .header__theme-menu-button_type_light {
-  border: 1px solid var(--text-card-color);
-}
-
-.page.theme_light .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--text-card-color);
-}
-
-.page.theme_light .header__icon {
-  display: none;
-}
-
-.page.theme_light .title-decor {
-  color: var(--text-card-color);
-}
-
-.page.theme_light .title-theme::before {
-  border-color: var(--text-card-color);
-}
-
-.page.theme_light .title-theme::after {
-  border-color: var(--text-card-color);
+  --text-hover-color: #32312d40;
+  --header-background-images: url("../images/cover-image-light.png");
+  --font-card-color: #353430;
+  --header-font-color: #ffc2e6;
 }
 
 @media (prefers-color-scheme: light) {
-  .page {
+  :root {
     --accent-color: #ff8dcb;
-    --title-card-color: #fff1f7;
-    --header-background-images: url("../images/cover-image-light.png");
+    --background-color: #fff1f7;
+    --title-card-color: #353430;
     --text-card-color: #353430;
-    --header-font-color: #ffc2e6;
     --text-hover-color: #32312d40;
-  }
-
-  .page .focus-card__title {
-    color: var(--text-card-color);
-  }
-
-  .page .header__theme-menu-button {
-    color: var(--text-card-color);
-  }
-
-  .page.theme_light .header__theme-menu-button_type_light {
-    border: 1px solid var(--text-card-color);
-  }
-
-  .page.theme_auto .header__theme-menu-button_type_auto {
-    border: 1px solid var(--text-card-color);
-  }
-
-  .page.theme_auto .header__theme-menu-button:focus-visible {
-    border-bottom: 1px solid var(--text-card-color);
-  }
-
-  .page.theme_auto .header__icon {
-    display: none;
-  }
-
-  .page.theme_auto .title-decor {
-    color: var(--text-card-color);
-  }
-
-  .page.theme_auto .title-theme::before {
-    border-color: var(--text-card-color);
-  }
-
-  .page.theme_auto .title-theme::after {
-    border-color: var(--text-card-color);
+    --header-background-images: url("../images/cover-image-light.png");
+    --font-card-color: #353430;
+    --header-font-color: #ffc2e6;
   }
 }
