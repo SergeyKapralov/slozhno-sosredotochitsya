@@ -29,18 +29,6 @@
   color: var(--title-card-color);
 }
 
-.theme_auto .header__theme-menu-button_type_auto {
-  border: 1px solid var(--title-card-color);
-}
-
-.theme_light .header__theme-menu-button_type_light {
-  border: 1px solid var(--title-card-color);
-}
-
-.theme_dark .header__theme-menu-button_type_dark {
-  border: 1px solid var(--title-card-color);
-}
-
 .header__theme-menu-button:focus {
   outline: none;
 }
@@ -70,16 +58,6 @@
   top: 12px;
   right: 39px;
   color: var(--accent-color);
-}
-
-.theme_light .header__icon {
-  display: none;
-}
-
-@media (prefers-color-scheme: light) {
-  .theme_auto .header__icon {
-    display: none;
-  }
 }
 
 .header__icon::after {

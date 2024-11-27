@@ -9,3 +9,15 @@
   --font-card-color: #000028;
   --header-font-color: #db00ff;
 }
+
+.theme_dark .header__icon {
+  display: block;
+}
+
+.theme_dark .header__theme-menu-button_type_dark {
+  border: 1px solid var(--title-card-color);
+}
+
+.theme_auto .header__theme-menu-button_type_auto {
+  border: 1px solid var(--title-card-color);
+}

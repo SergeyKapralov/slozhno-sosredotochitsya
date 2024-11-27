@@ -9,6 +9,14 @@
   --header-font-color: #ffc2e6;
 }
 
+.theme_light .header__icon {
+  display: none;
+}
+
+.theme_light .header__theme-menu-button_type_light {
+  border: 1px solid var(--title-card-color);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --accent-color: #ff8dcb;
@@ -19,5 +27,9 @@
     --header-background-images: url("../images/cover-image-light.png");
     --font-card-color: #353430;
     --header-font-color: #ffc2e6;
+  }
+
+  .header__icon {
+    display: none;
   }
 }
